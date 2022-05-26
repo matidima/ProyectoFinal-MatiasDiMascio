@@ -1,0 +1,47 @@
+/* MAIN NOSOTROS */
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 50px;
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    
+    .nosotros {
+        margin: 50px 90px;
+        h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .nosotros {
+        margin: 80px 120px;
+        h2 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }  
+}
+
+/* END MAIN NOSOTROS */

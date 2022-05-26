@@ -1,0 +1,88 @@
+/* MAIN */
+
+.division {
+    background: linear-gradient(#57d66e, map-get($colores, verdeclarito));
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.productosindex {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 850px;
+    article {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px 20px;
+        border: 2px solid map-get($colores, gris);
+        border-radius: 5px;
+        transition: all 0.25s;
+        &:hover {
+            transform: scale(0.95);
+            cursor: pointer;
+        }
+        img {
+            border-bottom: 2px solid map-get($colores, gris);
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        h4 {
+            text-align: center;
+            font-size: 15px;
+            margin-top: 5px !important;
+            font-weight: 600;
+        }
+        h6 {
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 5px !important;
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    
+    .productosindex {
+        article {
+            img{
+                height: 220px;
+                }
+                h4 {
+                    font-size: 18px;
+                }
+                h6 {
+                    font-size: 15px;
+                }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+    .productosindex {
+        max-width: 1200px;
+        article {
+            img {
+                height: 300px;
+                }
+                h4 {
+                    font-size: 22px;
+                }
+                h6 {
+                    font-size: 18px;
+                }
+        }
+    }
+
+}
+
+/* END MEDIA QUERIES */
+
+/* END MAIN */
